@@ -68,7 +68,9 @@
         <div class="container">
           <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
           <div class="center-button">
-            <button class="btn" type="button">Заказать услугу</button>
+            <button class="btn" type="button" data-modal-open>
+              Заказать услугу
+            </button>
           </div>
         </div>
       </section>
@@ -138,21 +140,37 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list card-set">
             <li class="item work-item">
-              <img
-                src="./images/img.jpg"
-                alt="Наполнение веб-страницы контентом"
-                width="370"
-              />
+              <div class="work-thumb">
+                <img
+                  src="./images/img.jpg"
+                  alt="Наполнение веб-страницы контентом"
+                  width="370"
+                />
+                <div class="work-set-item">
+                  <p class="work-item-set">Десктопные приложения</p>
+                </div>
+              </div>
             </li>
             <li class="item work-item">
-              <img
-                src="./images/box2.jpg"
-                alt="Оформления стилей"
-                width="370"
-              />
+              <div class="work-thumb">
+                <img
+                  src="./images/box2.jpg"
+                  alt="Оформления стилей"
+                  width="370"
+                />
+                <div class="work-set-item">
+                  <p class="work-item-set">Мобильные приложения</p>
+                </div>
+              </div>
             </li>
             <li class="item work-item">
-              <img src="./images/box3.jpg" alt="Дизайн" width="370" />
+              <div class="work-thumb">
+                <img src="./images/box3.jpg" alt="Дизайн" width="370" />
+
+                <div class="work-set-item">
+                  <p class="work-item-set">Дизайнерские решения</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -612,5 +630,16 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>
+          <svg class="icon-modal-close">
+            <use href="./images/icons/symbol-defs.svg#icon-vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
